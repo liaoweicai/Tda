@@ -1,0 +1,23 @@
+*{
+	font-family: "微软雅黑";
+}
+body{
+	background-color:rgb(230,230,230);
+}
+#kanj1{
+	width: 1000px;
+	height: 1000px;
+	background-color: white;
+	/*box-shadow: 1px 1px 1px darkgray;*/
+	margin: 0px auto;
+}
+table{
+	margin: 0px auto;
+}
+i{
+	color: red;	
+	margin-right: 7px;
+}
+#a1{
+	background-color: rgb(230,230,230);
+}
