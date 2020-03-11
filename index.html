@@ -10,56 +10,11 @@
 
 <body>
     <ul class="list">
-       <li></li>
+        <li></li>
     </ul>
 </body>
 
 </html>
 <script>
-    let [a, b, c] = [12, 6, 3];
-    let json = {
-        name: 'baidu',
-        age: 10,
-        job: '哈哈哈哈哈'
-    }
-    let { name: liao, age, job } = json;
-    console.log(a, b, c);/* 12 6 3 */
-    console.log(liao, age, job);/* baidu 10 哈哈哈哈哈 */
 
-    let [foo, [[bar], baz]] = [1, [[2], 3]];
-    foo // 1
-    bar // 2
-    baz // 3
-
-
-    let [, , third] = ["foo", "bar", "baz"];
-    third // "baz"
-
-
-    let [x, , y] = [1, 2, 3];
-    /* x=1 y=3*/
-    let [head, ...tail] = [1, 2, 3, 4];
-    console.log(head, tail);
-    /* head=1    tail=[2, 3, 4]*/
-    let [x, y, ...z] = ['a'];
-    console.log(x, y, z);
-    /* x=a  y=undefined   z=[]*/
-    /*如果解构不成功，变量的值就等于undefined*/
-
-
-
-    /*解构赋值允许指定默认值。*/
-    let [foo = true] = [];
-    foo // true
-    let [x, y = 'b'] = ['a']; // x='a', y='b'
-    console.log(y)
-    let [x, y = 'b'] = ['a', undefined]; // x='a', y='b'
-    let [x, y = 'b'] = ['a', '2131231']; // x='a', y='2131231'
-
-
-    /*交换2个数的位置*/
-    let a = 12;
-    let b = 5;
-    [a, b] = [b, a];
-    console.log(a, b)/*a=5 b=12*/
 </script>
