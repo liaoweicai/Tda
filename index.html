@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
-</head>
-
-<body>
-    <ul class="list">
-        <li></li>
-    </ul>
-</body>
-
-</html>
 <script>
-
+    //post()方式
+    $.ajax({
+        url: 'http://jsonplaceholder.typicode.com/posts',
+        type: 'get',
+        dataType: "jsonp",
+        success: function (data) {
+            console.log(data.length);
+            for (let i = 0; i < data.length; i++) {
+                $('.list').append(`<li>${data[i].body}</li>`);
+            }
+        },
+        error: function (error) { }
+    })
+    /*字符串查找*/
+    indexOf(要查找的东西)  /*返回索引值(位置)，没找到返回-1*/
+    includes(要查找的东西)/*(因库鲁斯)  返回值true/false*/
+    startsWith() /*检测字符串以什么开头*/
+    endsWith()/*检测字符串以什么结尾*/
 </script>
