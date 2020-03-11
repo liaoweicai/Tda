@@ -16,22 +16,4 @@
 
 </html>
 <script>
-    //post()方式
-    $.ajax({
-        url: 'http://jsonplaceholder.typicode.com/posts',
-        type: 'get',
-        dataType: "jsonp",
-        success: function (data) {
-            console.log(data.length);
-            for (let i = 0; i < data.length; i++) {
-                $('.list').append(`<li>${data[i].body}</li>`);
-            }
-        },
-        error: function (error) { }
-    })
-    /*字符串查找*/
-    indexOf(要查找的东西)  /*返回索引值(位置)，没找到返回-1*/
-    includes(要查找的东西)/*(因库鲁斯)  返回值true/false*/
-    startsWith() /*检测字符串以什么开头*/
-    endsWith()/*检测字符串以什么结尾*/
 </script>
